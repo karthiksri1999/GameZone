@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup video</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+
+}
+.content{
+    text-align: center;
+}
+body {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Alegreya SC';
+    overflow: hidden;
+}
+.mfp-hide{
+    display: none !important;
+}
+.buttonmore{
+    padding: 20px 20px;
+    border-color: orange;
+    font-size: 17px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: 40px;
+    display: inline-block;
+} 
+.buttonmore{
+    border: 2px solid orange;
+    color: black;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50px;
+    background: white;
+    font-weight: bold;
+}
+.buttonmore:hover, .buttonmore:focus{
+    background: transparent;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    outline: none;
+}
+
+</style>
+</head>
+
+<body>
+    <br><br>
+    
+<div class="content">
+    <h1>popup video</h1>
+    <a href="#videostory" class="buttonmore" id="videolink">
+        watch video <i class="fa fa-play-circle" aria-hidden="true"> &nbsp;</i>
+    </a>
+    
+    <div id="videostory" class="mfp-hide" 
+    style="max-width: 75%; margin: 0 auto;">  
+
+        <iframe width="850" height="420" src="https://www.youtube.com/embed/3ociATLe100" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+
+</div>
+
+<script>
+
+$('#videolink').magnificPopup({
+type:'inline',
+midClick: true
+
+})
+
+</script>
+
+</body>
+</html>
